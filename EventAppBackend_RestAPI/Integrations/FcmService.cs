@@ -31,7 +31,7 @@ namespace EventAppBackend_RestAPI.Integrations
             {
                 dynamic resposne = fcmClient.SendMessageAsync(message).Result;
                 var error = resposne?.Error;
-                if (error)
+                if (error != null)
                 {
                     throw new Exception($"FCM Error: {error}");
                 }
