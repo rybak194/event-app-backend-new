@@ -22,7 +22,7 @@ namespace EventAppBackend_RestAPI.Controllers
 
             if (req.OcPassword == ocPassword)
             {
-                return Ok("Authorized");
+                return Ok("\"Authorized\"");
             }
             else
             {

@@ -21,8 +21,7 @@ namespace EventAppBackend_RestAPI.Integrations
         {            
             var notifications = new INotification[]
             {
-                GetAndroidNotification(title, body),
-                GetIosNotification(title, body)
+                GetAndroidNotification(title, body)
             };
 
             var messages = notifications.Select(GetMessage).ToList();
