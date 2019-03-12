@@ -43,6 +43,8 @@ namespace EventAppBackend_RestAPI
             }
 
             app.UseHttpsRedirection();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }
