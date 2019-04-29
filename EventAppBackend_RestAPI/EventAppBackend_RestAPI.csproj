@@ -11,8 +11,15 @@
 
   <ItemGroup>
     <PackageReference Include="FirebaseNet" Version="1.0.1" />
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.38.2.1565" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="credentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
