@@ -61,6 +61,7 @@ namespace EventAppBackend_RestAPI.Integrations
             {
                 Title = title,
                 Body = body,
+                Sound = "default"
             };
         }
     }
